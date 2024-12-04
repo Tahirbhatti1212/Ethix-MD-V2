@@ -1,0 +1,3 @@
+name: Node.js Clon:push:branches:-mainpull_request:branches:-mainjobs:build:runs-on: ubuntu-lateststrategy:matrix:node-version:[20.x]
+node-version: [20.x]steps:-name: Checkout repositoryuses:actions/checkout@v3-name: Set up Node.jsuses: actions/setup-node@v3with:node-version: ${{ matrix.node-version }}-name: Install dependenciesrun: npm install- name:
+ Start applicationrun:npm start
